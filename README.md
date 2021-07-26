@@ -13,7 +13,8 @@ In addition, the project will also include
 - a modal pop up About page
 - a production README
 
-## Wireframes (TBD)
+## Wireframes
+![wireframe](https://github.com/robokitten007/HikingInNYC/blob/main/wireframe.png)
 
 ## Technologies, Libraries, APIs
 The project will be built with HTML, SCSS and Javascirpt. Dynamic rendering of the page will be serviced using plain Javascript and DOM manipulation. No jquery should be used.
