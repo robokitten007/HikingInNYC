@@ -1,0 +1,40 @@
+{
+  "name": "HikingInNYC",
+  "version": "1.0.0",
+  "description": "Public recreational space is important for the well-being of city dewellers and should always receive sufficient considertions in the city planning and development process. In this project, I attempt to use publicly available data from NYC OpenData to explore, compare and visulize the current status of hiking trails around the five boroughs of the city of New York. Which borogh is the most city-hiking friendly and which is not? Let's dig in together and find out!",
+  "main": "index.js",
+
+   "browserslist": [
+    "defaults"
+  ],
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robokitten007/HikingInNYC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robokitten007/HikingInNYC/issues"
+  },
+  "homepage": "https://github.com/robokitten007/HikingInNYC#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.15.2",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.36.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
