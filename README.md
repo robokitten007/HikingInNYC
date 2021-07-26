@@ -23,7 +23,7 @@ This porject also plans to use the following:
 - The `D3.js` library to render interactive data visualization
 ## Implementation Timeline
 - Weekend: Set up project skeleton, including webpack, create Github repo, and submit project proposal
-- Monday: Get comfortable with D3 library, write underlying logic for diplaying the data, making sure correct data source can be fetched and bonded
+- Monday: Get comfortable with D3 library, write underlying logic for displaying the data, making sure correct data source can be fetched and bonded
 - Tuesday: Make sure bar charts can be correctly rendered, including the x/y axis. Make drop down menu/selection button for x/y axis for different subset data rendering.
 - Wednesday: Finish main bar charts rendering if haven't already on Tuesday. Add project logo, relevent personal links and About page (modal) to the index page. Style the whole project with consistent theme.
 - Thursday: half a day to clean up the code and rewrite production README if applicable.  Deploy the code to GitHub page.
