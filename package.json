@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Public recreational space is important for the well-being of city dewellers and should always receive sufficient considertions in the city planning and development process. In this project, I attempt to use publicly available data from NYC OpenData to explore, compare and visulize the current status of hiking trails around the five boroughs of the city of New York. Which borogh is the most city-hiking friendly and which is not? Let's dig in together and find out!",
   "main": "index.js",
-
-   "browserslist": [
+  "browserslist": [
     "defaults"
   ],
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --mode=development",
@@ -30,6 +28,7 @@
     "babel-loader": "^8.2.2",
     "core-js": "^3.15.2",
     "css-loader": "^6.2.0",
+    "d3": "^7.0.0",
     "mini-css-extract-plugin": "^2.1.0",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.36.0",
