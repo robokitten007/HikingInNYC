@@ -6,8 +6,11 @@ export default source=>{
    
     d3.json(source).then(data=>{
          let result = data_parse(data)
-         chart(result)
-    })
+         chart(result.Borough)
+
+        //  chart(data)
+
+        })
 
 }
 

@@ -161,7 +161,7 @@ export default data =>{
         }
         result.WheelChairAccess.push(object)
     })
-    console.log(result)
+    // console.log(result)
     return result    
 }
  
