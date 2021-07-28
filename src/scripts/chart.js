@@ -4,6 +4,7 @@ import * as d3 from 'd3'
 //        let data=result.Borough
 
 export default data =>{
+    d3.selectAll("svg > *").remove();
     const svg = d3.select('svg'),
 
     margin={top: 20,
@@ -20,7 +21,7 @@ export default data =>{
 //    console.log(result)
 //        let data=result.Borough
         console.log(data)
-        x.domain(data.map(d=>d.x_borough))
+        x.domain(data.map(d=>d[Object.keys(d)[0]]))
         y.domain([0, d3.max(data, d=>d.no_trails)])
        
         //x-axis

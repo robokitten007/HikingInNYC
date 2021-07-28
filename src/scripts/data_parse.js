@@ -25,7 +25,7 @@
         }
 
     ],
-    "Property Name": {
+    "Park": {
         x_property_name:
     }
 
