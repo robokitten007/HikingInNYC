@@ -19,5 +19,28 @@ export default result =>{
                 loadKey(key)
             }
         })
+    const yUl = document.getElementById('y-ul')
+    // console.log(result[key][0])
+    // console.log(Object.keys(result[key][0]).slice(1))
+    Object.keys(result[key][0]).slice(1).forEach(YKey=>{
+        
+        const yLi = document.createElement('li')
+        yLi.classList.add('y-content')
+        yLi.innerHTML = YKey
+        yUl.appendChild(yLi)
+        yLi.addEventListener('click', e=>{
+            if(!e.target.classList.contains('active')){
+                Array.from(yUl.getElementsByClassName('active')).forEach(li=>{
+                    li.classList.remove('active');
+                })
+                e.target.classList.add('active')
+                // key=e.target.innerHTML
+                // console.log(key)
+                // loadKey(key)
+            }
+        })
     })
+    })
+
+
 }

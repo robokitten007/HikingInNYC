@@ -1,9 +1,7 @@
 import * as d3 from 'd3'
 
-//export default data =>{
-//        let data=result.Borough
 
-export default (data) =>{
+export default (data, YKey='no_trails') =>{
     d3.selectAll("svg > *").remove();
     const svg = d3.select('svg'),
 
@@ -23,7 +21,7 @@ export default (data) =>{
         console.log(data)
         const keys = data.map(d=>d[Object.keys(d)[0]])
         x.domain(keys)
-        y.domain([0, d3.max(data, d=>d.no_trails)])
+        y.domain([0, d3.max(data, d=>d[YKey])])
        
         //x-axis
         g.append('g')
@@ -43,5 +41,5 @@ export default (data) =>{
             .attr('x', d => x(d[Object.keys(d)[0]]))
             .attr('y', d => y(d.no_trails))
             .attr('width', x.bandwidth())
-            .attr('height', d=>height - y(d.no_trails));  
+            .attr('height', d=>height - y(d[YKey]));  
 }

@@ -11,6 +11,7 @@ let result
 
 d3.json(source).then(data=>{
     result = data_parse(data)
+    console.log(result)
     drop_down(result)
     loadKey("Borough");
     
