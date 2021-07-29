@@ -74,3 +74,9 @@ table {
 .body-content {
   width: 800px;
 }
+
+h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
