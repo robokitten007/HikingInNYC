@@ -62,3 +62,7 @@ table {
   display: flex;
   justify-content: space-between;
 }
+
+.bar-chart-axis {
+  display: inline;
+}
