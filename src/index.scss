@@ -30,7 +30,8 @@
 }
 .header-data-source > a{
     text-decoration: none;
-    color: white;
+    color: black;
+    font-family: sans-serif;
 }
 .header-links{
     margin-right: 20px;
@@ -45,21 +46,66 @@
 .bar-chart {
     float: left;
 }
-
+.bar-chart{
+    margin-left: 40px;
+}
 .bar-chart-axis {
-    margin-left: 700px;
+    margin-left: 850px;
 }
 
 .body-content {
-    width: 800px;
+    width: 1000px;
+}
+.x-content, .y-content { 
+    font-family: sans-serif;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+
+    // border: 1px solid black;
+
+    
+}
+.x-content:hover:not(.active){
+    background-color: gainsboro
 }
 
+.y-content:hover:not(.active){
+    background-color: gainsboro
+}
+
+// .y-content{
+//     font-family: sans-serif;
+//     margin-top: 10px;
+   
+// }
+.active{
+    border-radius: 3px;
+    background-color: gray;
+    color: #fff
+}
 h2 {
+    font-family: sans-serif;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 #header-button{
     cursor: pointer;
 }
+
+.bar{
+    // fill: #71EEB8;
+    fill: steelblue
+}
+
+.bar:hover {
+  fill: slateblue;
+}
+.axis text{
+    font-weight: bold;
+}
+

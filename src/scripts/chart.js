@@ -11,7 +11,7 @@ export default (data, YKey) =>{
             bottom: 30,
             left: 50},
 
-            width = svg.attr('width') - margin.left - margin.right,
+    width = svg.attr('width') - margin.left - margin.right,
     height = svg.attr('height') - margin.top - margin.bottom,
     x = d3.scaleBand().rangeRound([0, width]).padding(0.2),
     y = d3.scaleLinear().rangeRound([height,0]),
