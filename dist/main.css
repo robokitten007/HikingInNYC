@@ -63,6 +63,14 @@ table {
   justify-content: space-between;
 }
 
+.bar-chart {
+  float: left;
+}
+
 .bar-chart-axis {
-  display: inline;
+  margin-left: 700px;
+}
+
+.body-content {
+  width: 800px;
 }

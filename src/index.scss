@@ -8,6 +8,14 @@
     justify-content: space-between;
 }
 
-.bar-chart-axis{
-    display:inline;
+.bar-chart {
+    float: left;
+}
+
+.bar-chart-axis {
+    margin-left: 700px;
+}
+
+.body-content {
+    width: 800px;
 }
