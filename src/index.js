@@ -13,12 +13,11 @@ d3.json(source).then(data=>{
     result = data_parse(data)
     console.log(result)
     drop_down(result)
-    loadKey("Borough");
-    
+    loadKey("WheelChairAccess", 'sum_traillength');
 })
 
-export const loadKey = key=>{
-    data_bind(result[key]);
+export const loadKey = (key, subkey='no_trails') =>{
+    data_bind(result[key], subkey);
 }
 // Make an <li> list between:
 // borough

@@ -39,7 +39,7 @@ export default (data, YKey='no_trails') =>{
             .enter().append('rect')
             .attr('class', 'bar')
             .attr('x', d => x(d[Object.keys(d)[0]]))
-            .attr('y', d => y(d.no_trails))
+            .attr('y', d => y(d[YKey]))
             .attr('width', x.bandwidth())
             .attr('height', d=>height - y(d[YKey]));  
 }
