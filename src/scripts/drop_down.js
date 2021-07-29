@@ -22,7 +22,7 @@ export default result =>{
             })
     })
    const yUl = document.getElementById('y-ul')
-   Object.keys(result['Borough'][0]).slice(1).forEach(key=>{
+   Object.keys(result['Borough'][0]).slice(1,6).forEach(key=>{
         const yLi = document.createElement('li')
         yLi.classList.add('y-content')
         yLi.innerHTML= key

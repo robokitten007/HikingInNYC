@@ -1,6 +1,10 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap);
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
+  \*****************************************************************************************************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,11 +60,41 @@ table {
 }
 
 .header {
-  width: 80%;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  background-color: #a8a7a7;
+  color: #222831;
+  font-family: sans-serif;
+}
+
+.header-title {
+  margin-left: 20px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  font-family: Teko;
+  font-size: 30px;
+}
+
+.header-data-source {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.header-data-source > a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-links {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.header-links > a {
+  margin: 5px;
 }
 
 .bar-chart {
@@ -79,4 +113,8 @@ h2 {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+#header-button {
+  cursor: pointer;
 }
