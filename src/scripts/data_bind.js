@@ -1,7 +1,8 @@
 import chart from './chart'
 import drop_down from './drop_down'
-export default (data, subkey='no_trails') =>{
+export default (data, YKey) =>{
         
-        chart(data, subkey)
+        chart(data, YKey)
+        console.log('data_bind')
 }
 

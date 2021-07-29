@@ -10,14 +10,18 @@ const source = dataSources[Object.keys(dataSources)[0]]
 let result
 
 d3.json(source).then(data=>{
+    //data is rawdata here
     result = data_parse(data)
     console.log(result)
     drop_down(result)
-    loadKey("WheelChairAccess", 'sum_traillength');
+    loadKey("Borough", 'no_trails');
 })
 
-export const loadKey = (key, subkey='no_trails') =>{
+export const loadKey = (key='Borough', subkey='no_trails') =>{
     data_bind(result[key], subkey);
+    // console.log(result[key])
+    // console.log(subkey)
+    console.log('loadkey')
 }
 // Make an <li> list between:
 // borough

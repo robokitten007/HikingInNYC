@@ -1,7 +1,8 @@
 import { loadKey } from "../index";
 
 export default result =>{
-    let key;
+    let XKey
+    let YKey
     const xUl = document.getElementById('x-ul')
     Object.keys(result).forEach(key=>{
         const xLi = document.createElement('li')
@@ -14,20 +15,17 @@ export default result =>{
                         li.classList.remove('active');
                     })
                     e.target.classList.add('active')
-                    key=e.target.innerHTML
-                    console.log(key)
-                    loadKey(key)
+                    XKey=e.target.innerHTML
+                    console.log(XKey)
+                    loadKey(XKey, YKey)
                 }
             })
-        // console.log(result[key][0])
-        // console.log(Object.keys(result[key][0]).slice(1))
     })
-         const yUl = document.getElementById('y-ul')
-   Object.keys(result['Borough'][0]).slice(1).forEach(YKey=>{
-        
+   const yUl = document.getElementById('y-ul')
+   Object.keys(result['Borough'][0]).slice(1).forEach(key=>{
         const yLi = document.createElement('li')
         yLi.classList.add('y-content')
-        yLi.innerHTML = YKey
+        yLi.innerHTML= key
         yUl.appendChild(yLi)
         yLi.addEventListener('click', e=>{
             if(!e.target.classList.contains('active')){
@@ -35,12 +33,14 @@ export default result =>{
                     li.classList.remove('active');
                 })
                 e.target.classList.add('active')
-                // key=e.target.innerHTML
-                // console.log(key)
-                // loadKey(key)
+                YKey=e.target.innerHTML
+                console.log(YKey)
+                loadKey(XKey, YKey)
+    
             }
         })
     })
+      
 
 
 }
