@@ -30,12 +30,11 @@ export default (data, YKey) =>{
             .attr('transform', `translate(0, ${height})`)
             .call(d3.axisBottom(x))
         
-// console.log("xKey =" +xKey);
         g.append('g')
             .attr('class', 'axis axis-y')
             .call(d3.axisLeft(y).ticks(10).tickSize(8))
         
-                g.selectAll('.bar')
+         g.selectAll('.bar')
             .data(data)
             .enter().append('rect')
             .attr('class', 'bar')
