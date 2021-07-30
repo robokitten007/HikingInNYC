@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-
+import {tip as d3tip} from 'd3-v6-tip'
 
 export default (data, YKey) =>{
     console.log('chart')
@@ -67,5 +67,19 @@ export default (data, YKey) =>{
         .style('text-anchor', 'middle')
         .text(YKey)
         // .text(d[Object.values(d)].split('_')[0]])
+
+
+//adding tooltips
+
+const tip = d3tip()
+        .attr('class', 'tooltip')
+        .offset([-10,0])
+        .html((event,d)=>(`<span>${YKey}:` + d[YKey] + '</span>'))
+        // .html((event,d)=>('this is a test'))
+    svg.call(tip)
+    
+    g.selectAll('.bar')
+        .on('mouseover', tip.show)
+        .on ('mouseout', tip.hide)
 
 }
