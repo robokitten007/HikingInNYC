@@ -10,7 +10,7 @@ In this project, users will be able to view relevant data in the form of bar cha
 - when viewing info on trails' level of difficulty and length, users will be able to select which child info to review (i.e. the sum/average/max/min of the length, and max/min/median for the level of difficulty)  
 
 In addition, the project will also include 
-- a modal pop up About page
+- a modal pop up Intro page
 - a production README
 
 ## Wireframes

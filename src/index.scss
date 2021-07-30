@@ -1,6 +1,9 @@
 @import "./styles/reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 
+.body-content{
+    overflow: scroll;
+}
 .header{
     // width: 80%;
     // margin-left: 20px;

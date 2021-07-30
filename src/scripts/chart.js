@@ -8,7 +8,7 @@ export default (data, YKey) =>{
 
     margin={top: 20,
             right: 20,
-            bottom: 200,
+            bottom: 100,
             left: 50},
 
     width = svg.attr('width') - margin.left - margin.right,
@@ -32,7 +32,7 @@ export default (data, YKey) =>{
             .selectAll('text')
                 .style('text-anchor', 'end')
                 .attr('dx', '-0.8em')
-                .attr('transform', d=>'rotate(-65)')
+                .attr('transform', d=>'rotate(-45)')
         //y-axis
         g.append('g')
             .attr('class', 'axis axis-y')

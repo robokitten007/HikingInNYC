@@ -59,6 +59,10 @@ table {
   border-spacing: 0;
 }
 
+.body-content {
+  overflow: scroll;
+}
+
 .header {
   height: 40px;
   margin-bottom: 20px;
