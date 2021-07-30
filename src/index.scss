@@ -33,12 +33,13 @@
     padding-left: 10px;
     color: black;
     font-family: sans-serif;
-    cursor:pointer;
-    
+    cursor:pointer;  
+    transition: all 0.5s;
 }
-.header-data-source > a:hover{
+.header-data-source a:hover{
+    color: whitesmoke;
+}
 
-}
 .header-links{
     margin-right: 20px;
     padding: 5px;
@@ -64,10 +65,12 @@
 }
 .x-content, .y-content { 
     font-family: sans-serif;
-    padding: 5px;
-    margin-top: 10px;
+    padding: 2px;
+    margin-top: 5px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px
 
     // border: 1px solid black;
 
@@ -102,7 +105,17 @@ h2 {
 #header-button{
     cursor: pointer;
 }
+#header-button:hover{
+    color: whitesmoke
+}
 
+
+.header-links a:hover{
+    color: whitesmoke;
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+}
 .bar{
     // fill: #71EEB8;
     fill: steelblue
@@ -115,17 +128,25 @@ h2 {
     font-weight: bold;
 }
 
-h2{
-  padding : 30px;
+.dropdown{
+  padding : 20px;
+  margin-bottom: 10px;
   background : #2d2f31; 
   color : white;
-  font-size : 1.2em;
-  font-variant : small-caps;
+  font-size: 1.2em;
+  font-variant: small-caps;
   cursor : pointer;
   display: block;
+  box-shadow: 0 4px 2px -2px gray;
+  border-radius: 5px;
 }
+.dropdown:hover {
+  box-shadow: none;
+  position: relative;
+  top: 2px;
+ }
 
-h2 span::after{
+.dropdown::after{
   float: right;
   right: 10%;
   content: "+";
@@ -139,7 +160,7 @@ h2 span::after{
 }
 
 .dropdown-list li{
-    padding: 30px
+    padding: 20px
 }
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
