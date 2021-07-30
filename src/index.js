@@ -18,7 +18,7 @@ import * as d3 from 'd3';
 
 
 const dataSources ={
-    'NYC Hiking': '../data/NYC_Hiking.json'
+    'NYC Hiking': '../dist/data/NYC_Hiking.json'
 }
 const source = dataSources[Object.keys(dataSources)[0]]
 let result
