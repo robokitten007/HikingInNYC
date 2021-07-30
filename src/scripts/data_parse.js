@@ -111,7 +111,7 @@ export default data =>{
             Max_difficultylevel: maxLevel(borough)[key],
             Min_difficultylevel: minLevel(borough)[key]
         }
-        // console.log(object)
+        
         result.Borough.push(object)
     })
       Object.keys(parkName).forEach(key=>{
@@ -125,7 +125,7 @@ export default data =>{
             max_difficultylevel: maxLevel(parkName)[key],
             min_difficultylevel: minLevel(parkName)[key]
         }
-        // console.log(object)
+      
         result.Park.push(object)
     })
 
@@ -142,7 +142,7 @@ export default data =>{
         }
         result.WheelChairAccess.push(object)
     })
-    // console.log(result)
+   
     return result    
 }
  
@@ -152,7 +152,7 @@ export default data =>{
      Object.keys(stage).forEach(key=>{
          stage[key].forEach(record=>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
-                // console.log(parseFloat(record.Length))
+                
                 if(!sum[key]){
                     sum[key]= parseFloat(record.Length)
                 }
@@ -174,7 +174,7 @@ export default data =>{
          let count=0
          stage[key].forEach(record=>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
-                // console.log(parseFloat(record.Length))
+               
                 if(!sum[key]){
                     sum[key]= parseFloat(record.Length)
                     
@@ -199,7 +199,6 @@ export default data =>{
      Object.keys(stage).forEach(key=>{
          stage[key].forEach(record=>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
-                // console.log(parseFloat(record.Length))
                 if(!max[key]){
                     max[key]= parseFloat(record.Length).toFixed(2)
                 }
@@ -220,7 +219,6 @@ export default data =>{
      Object.keys(stage).forEach(key=>{
          stage[key].forEach(record=>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
-                // console.log(parseFloat(record.Length))
                 if(!min[key]){
                     min[key]= parseFloat(record.Length).toFixed(2)
                 }

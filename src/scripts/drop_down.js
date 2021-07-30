@@ -16,7 +16,6 @@ export default result =>{
                     })
                     e.target.classList.add('active')
                     XKey=e.target.innerHTML
-                    console.log(XKey)
                     loadKey(XKey, YKey)
                 }
             })
@@ -34,7 +33,6 @@ export default result =>{
                 })
                 e.target.classList.add('active')
                 YKey=e.target.innerHTML
-                console.log(YKey)
                 loadKey(XKey, YKey)
     
             }

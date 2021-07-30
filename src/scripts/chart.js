@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 import {tip as d3tip} from 'd3-v6-tip'
 
 export default (data, YKey) =>{
-    console.log('chart')
+
     d3.selectAll("svg > *").remove();
     const svg = d3.select('svg'),
 
@@ -17,9 +17,6 @@ export default (data, YKey) =>{
     y = d3.scaleLinear().rangeRound([height,0]),
     g = svg.append('g')
             .attr('transform', `translate(${margin.left}, ${margin.top})`);
-//    console.log(result)
-//        let data=result.Borough
-        // console.log(data)
         const keys = data.map(d=>d[Object.keys(d)[0]])
         x.domain(keys)
         y.domain([0, d3.max(data, d=>d[YKey])])
