@@ -14,17 +14,12 @@ d3.json(source).then(data=>{
     result = data_parse(data)
     console.log(result)
     drop_down(result)
-    loadKey("Borough", 'no_trails');
+    loadKey("Borough", 'TotalNumber');
 })
 
-export const loadKey = (key='Borough', subkey='no_trails') =>{
+export const loadKey = (key='Borough', subkey='TotalNumber') =>{
     data_bind(result[key], subkey);
-    // console.log(result[key])
-    // console.log(subkey)
-    console.log('loadkey')
+   
+    // console.log('loadkey')
 }
-// Make an <li> list between:
-// borough
-// accessibility
-// With on lick get let newKey = li.innerHTML, then call loadKey(newKey);
 

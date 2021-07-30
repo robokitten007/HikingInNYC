@@ -19,35 +19,16 @@
             x_borough: "Brooklyn",
             sum-trails: "30",
             sum-mileage: "40",
+        
             average: "30"
             
 
         }
 
     ],
-    "Park": {
-        x_property_name:
-    }
 
-    "WheelChairAccess":{
-        x_
-    }
-    {}
 }
 
-<ul>
-<li>Boroughs</li>
-<li id="active-dataset">Property Name</li>
-
-getOptions() {
-    element = DOM.getID("active-dataset");
-    updateChart(element.innerHTML);
-}
-
-func updateChart(setName) {
-    let newData = data[setName];
-    drawChart(newData, type);
-}
 
 */
 export default data =>{
@@ -122,13 +103,13 @@ export default data =>{
     Object.keys(borough).forEach(key=>{
         let object={
             x_borough: key,
-            no_trails: borough[key].length,
-            sum_traillength: totalLength(borough)[key],
-            avg_traillength: avergeLength(borough)[key],
-            max_traillength: maxLength(borough)[key],
-            min_traillength: minLength(borough)[key],
-            max_difficultylevel: maxLevel(borough)[key],
-            min_difficultylevel: minLevel(borough)[key]
+            TotalNumber: borough[key].length,
+            SumLength: totalLength(borough)[key],
+            AvgLength: avergeLength(borough)[key],
+            MaxLength: maxLength(borough)[key],
+            MinLength: minLength(borough)[key],
+            Max_difficultylevel: maxLevel(borough)[key],
+            Min_difficultylevel: minLevel(borough)[key]
         }
         // console.log(object)
         result.Borough.push(object)
@@ -136,11 +117,11 @@ export default data =>{
       Object.keys(parkName).forEach(key=>{
         let object={
             x_parkName: key,
-            no_trails: parkName[key].length,
-            sum_traillength: totalLength(parkName)[key],
-            avg_traillength: avergeLength(parkName)[key],
-            max_traillength: maxLength(parkName)[key],
-            min_traillength: minLength(parkName)[key],
+            TotalNumber: parkName[key].length,
+            SumLength: totalLength(parkName)[key],
+            AvgLength: avergeLength(parkName)[key],
+            MaxLength: maxLength(parkName)[key],
+            MinLength: minLength(parkName)[key],
             max_difficultylevel: maxLevel(parkName)[key],
             min_difficultylevel: minLevel(parkName)[key]
         }
@@ -151,11 +132,11 @@ export default data =>{
     Object.keys(accessibility).forEach(key=>{
         let object={
             accessibility: key,
-            no_trails: accessibility[key].length,
-            sum_traillength: totalLength(accessibility)[key],
-            avg_traillength: avergeLength(accessibility)[key],
-            max_traillength: maxLength(accessibility)[key],
-            min_traillength: minLength(accessibility)[key],
+            TotalNumber: accessibility[key].length,
+            SumLength: totalLength(accessibility)[key],
+            AvgLength: avergeLength(accessibility)[key],
+            MaxLength: maxLength(accessibility)[key],
+            MinLength: minLength(accessibility)[key],
             max_difficultylevel: maxLevel(accessibility)[key],
             min_difficultylevel: minLevel(accessibility)[key]
         }

@@ -46,7 +46,6 @@ export default (data, YKey) =>{
             .attr('width', x.bandwidth())
             .attr('height', d=> (height -y(0)))
             .attr('y', d=>y(0))
-
     
 //adding transition
 
@@ -55,4 +54,17 @@ export default (data, YKey) =>{
             .duration(800)
             .attr('y', d => y(d[YKey]))
             .attr('height', d=>height - y(d[YKey])); 
+
+
+//adding y-axis lable
+
+ svg.append('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('y', 0)
+        .attr('x', 0-height/2)
+        .attr('dy', '1em')
+        .style('text-anchor', 'middle')
+        .text(YKey)
+        // .text(d[Object.values(d)].split('_')[0]])
+
 }
