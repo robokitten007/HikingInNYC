@@ -33,10 +33,10 @@ export default (data, YKey) =>{
                 .style('text-anchor', 'end')
                 .attr('dx', '-0.8em')
                 .attr('transform', d=>'rotate(-65)')
-        
+        //y-axis
         g.append('g')
             .attr('class', 'axis axis-y')
-            .call(d3.axisLeft(y).ticks(10).tickSize(8))
+            .call(d3.axisLeft(y))
 
          g.selectAll('.bar')
             .data(data)
@@ -73,7 +73,7 @@ export default (data, YKey) =>{
 
 const tip = d3tip()
         .attr('class', 'tooltip')
-        .offset([-10,0])
+        .offset([-5,0])
         .html((event,d)=>(`<span>${YKey}:` + d[YKey] + '</span>'))
         // .html((event,d)=>('this is a test'))
     svg.call(tip)

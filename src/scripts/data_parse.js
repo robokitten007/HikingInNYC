@@ -177,6 +177,7 @@ export default data =>{
                 // console.log(parseFloat(record.Length))
                 if(!sum[key]){
                     sum[key]= parseFloat(record.Length)
+                    
                 }
                 else {
                     sum[key] += parseFloat(record.Length)
@@ -200,10 +201,10 @@ export default data =>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
                 // console.log(parseFloat(record.Length))
                 if(!max[key]){
-                    max[key]= parseFloat(record.Length)
+                    max[key]= parseFloat(record.Length).toFixed(2)
                 }
                 else if(max[key] < parseFloat(record.Length)){
-                    max[key] = parseFloat(record.Length)
+                    max[key] = parseFloat(record.Length).toFixed(2)
                 }
            
              }
@@ -221,10 +222,10 @@ export default data =>{
              if(typeof record.Length === 'string' && record.Length.includes('mile')){
                 // console.log(parseFloat(record.Length))
                 if(!min[key]){
-                    min[key]= parseFloat(record.Length)
+                    min[key]= parseFloat(record.Length).toFixed(2)
                 }
                 else if(min[key] > parseFloat(record.Length)){
-                    min[key] = parseFloat(record.Length)
+                    min[key] = parseFloat(record.Length).toFixed(2)
                 }
            
              }
