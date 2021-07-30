@@ -37,13 +37,22 @@ export default (data, YKey) =>{
         g.append('g')
             .attr('class', 'axis axis-y')
             .call(d3.axisLeft(y).ticks(10).tickSize(8))
-        
+
          g.selectAll('.bar')
             .data(data)
             .enter().append('rect')
             .attr('class', 'bar')
             .attr('x', d => x(d[Object.keys(d)[0]]))
             .attr('width', x.bandwidth())
+            .attr('height', d=> (height -y(0)))
+            .attr('y', d=>y(0))
+
+    
+//adding transition
+
+        g.selectAll('rect')
+            .transition()
+            .duration(800)
             .attr('y', d => y(d[YKey]))
-            .attr('height', d=>height - y(d[YKey]));  
+            .attr('height', d=>height - y(d[YKey])); 
 }
