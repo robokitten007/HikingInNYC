@@ -74,7 +74,7 @@ export default (data, YKey) =>{
 const tip = d3tip()
         .attr('class', 'tooltip')
         .offset([-5,0])
-        .html((event,d)=>(`<span>${YKey}:` + d[YKey] + '</span>'))
+        .html((event,d)=>(`<span class='tip-text'>${YKey}:` + '  ' + d[YKey] + '</span>'))
         // .html((event,d)=>('this is a test'))
     svg.call(tip)
     
