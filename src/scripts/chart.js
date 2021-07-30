@@ -59,8 +59,9 @@ export default (data, YKey) =>{
 //adding y-axis lable
 
  svg.append('text')
+        .attr('class', 'y-label')
         .attr('transform', 'rotate(-90)')
-        .attr('y', 0)
+        .attr('y', 0-5)
         .attr('x', 0-height/2)
         .attr('dy', '1em')
         .style('text-anchor', 'middle')

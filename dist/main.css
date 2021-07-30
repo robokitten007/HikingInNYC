@@ -246,3 +246,8 @@ h2 {
 .bar-chart-axis:checked + .dropdown-list {
   height: 300px;
 }
+
+.y-label {
+  font-size: 18px;
+  font-family: sans-serif;
+}
