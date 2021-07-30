@@ -8,7 +8,7 @@ export default (data, YKey) =>{
 
     margin={top: 20,
             right: 20,
-            bottom: 30,
+            bottom: 200,
             left: 50},
 
     width = svg.attr('width') - margin.left - margin.right,
@@ -29,6 +29,10 @@ export default (data, YKey) =>{
             .attr("class", 'axis axis-x')
             .attr('transform', `translate(0, ${height})`)
             .call(d3.axisBottom(x))
+            .selectAll('text')
+                .style('text-anchor', 'end')
+                .attr('dx', '-0.8em')
+                .attr('transform', d=>'rotate(-65)')
         
         g.append('g')
             .attr('class', 'axis axis-y')
@@ -39,7 +43,7 @@ export default (data, YKey) =>{
             .enter().append('rect')
             .attr('class', 'bar')
             .attr('x', d => x(d[Object.keys(d)[0]]))
-            .attr('y', d => y(d[YKey]))
             .attr('width', x.bandwidth())
+            .attr('y', d => y(d[YKey]))
             .attr('height', d=>height - y(d[YKey]));  
 }
