@@ -36,6 +36,7 @@
     padding-left: 10px;
     color: black;
     font-family: sans-serif;
+    // font-style: italic;
     cursor:pointer;  
     transition: all 0.5s;
 }
@@ -280,5 +281,11 @@ height: 60%;
     margin-left: 40px;
     margin-top: 10px;
     font-family: Teko;
-    color: gray
+    color: gray;
+    font-style: italic;
+}
+
+.header-dataset{
+    font-family: teko;
+    font-size: 25px;
 }
