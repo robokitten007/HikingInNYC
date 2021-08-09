@@ -136,12 +136,13 @@ h2 {
   margin-bottom: 10px;
   background : #2d2f31; 
   color : white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-variant: small-caps;
   cursor : pointer;
   display: block;
   box-shadow: 0 4px 2px -2px gray;
   border-radius: 5px;
+  font-family: teko;
 }
 .dropdown:hover {
   box-shadow: none;
@@ -275,4 +276,9 @@ height: 60%;
   }
 }
 
-      
+.footer{
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: Teko;
+    color: gray
+}
